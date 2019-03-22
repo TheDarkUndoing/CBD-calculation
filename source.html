@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+
+ <html lang="en">
+ <head>
+ 	<title>CBD Conversion</title>
+ 	<meta charset="utf-8">
+ 	<meta name="veiwport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+ 	
+ 	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	<script src="jquery-3.3.1.js"></script>
+ 	<script src="script.js"></script>
+ </head>
+<div class="container-fluid">
+<body>
+<form  method="post">
+	<fieldset id="Tform">
+	<div >
+		<label>Size of Container</label>
+			<input id="Size" type="number" name="Measurement" min="1" placeholder="Size of Container"  oninput="handle();" onchange="handle();">
+			<input type="radio" value="mL" name="cSize1"  onclick="analyzeRadio(this.value); handle();">mL
+			<input type="radio" value="oz" name="cSize1" onclick="analyzeRadio(this.value); handle();">oz
+	</div>
+
+	<div>
+		<label>CBD Content in Container</label>
+			<input id="Content"type="number" name="Measurement" min="1" placeholder="CBD in Container" oninput="handle();" onchange="handle();">
+			<input type="radio" value="mg" name="cContent1"  onclick="analyzeRadio1(this.value); handle();">mg
+			<input type="radio" value="g"name="cContent1" onclick="analyzeRadio1(this.value); handle();">g
+	</div>
+
+	<div>
+		<label>Price of Product </label><label style="font-weight: normal; font-style: italic; font-size: 15;">(include shipping if possible)</label>
+			<input id="Price" type="number" name="Price" min="1" placeholder="$"  oninput="handle();" onchange="handle();">
+
+
+
+	<div>
+		<label>CBD Dose Required </label><label style="font-weight: normal; font-style: italic; font-size: 15;">in milligrams)</label>
+			<input id="Dose" type="number" name="Measurement" min="1" placeholder="Default is 20" oninput="handle();" onchange="handle();">
+	</div>
+			
+
+	<div>
+		<label>Number of Drops in 1mL of Tincture</label>
+			<input id ="Drops" type="number" name="Measurement" min="1" placeholder="Default is 20" oninput="handle();" onchange="handle();"> <br>
+			
+			
+	</div>
+	</fieldset>
+
+
+<br>
+<br>
+
+	<p>Cost per mg of CBD: $<span id="output1"></span></p>
+	<p>CBD Content Per mL: <span id="output2"></span></p>
+	<p>mL needed per dose: <span id="output3"></span></p>
+	<p>Total doses in container: <span id="output4"></span></p>
+	<p>Drops per dose: <span id="output5"></span></p>
+	<p>Cost per dose: <span id="output6"></span></p>
+</form>
+</body>
+</div>
+</html> 
