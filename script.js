@@ -1,11 +1,11 @@
 
 
-radio1="mL";
-radio2="mg";
+
+var radio1 = "mL";
+var radio2 = "mg";
 
 
-function handle()
-{
+function handle() {
 		handle1();
 		handle2();
 		handle3();
@@ -120,3 +120,4 @@ function handle4()
 
 	}
 	
+handle()
