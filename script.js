@@ -1,8 +1,7 @@
 var radio1 = "mL";
 var radio2 = "mg";
 
-var Dose = 20
-var Drops = 20
+
 
 
 
@@ -47,10 +46,8 @@ function handle1() {
 
 function handle2() {
     "use strict";
-    var Size = document.getElementById("Size")
-        .value;
-    var Content = document.getElementById("Content")
-        .value;
+    var Size = document.getElementById("Size").value;
+    var Content = document.getElementById("Content").value;
     if (Content == "" || Size == "") {
         document.getElementById("output2").innerHTML = ""
     } else {
@@ -60,16 +57,18 @@ function handle2() {
         if (radio2 == "g") {
             Content = Content * 1000;
         }
-
-    document.getElementById("output2").innerHTML = Size / Content;
+    var output = Size / Content;
+    var output = output.toFixed(2);
+    document.getElementById("output2").innerHTML = output;
     }
 }
 
 function handle3() {
     "use strict";
     var contentpermL = document.getElementById("output2").innerHTML;
+    var Dose = document.getElementById("Dose").value;
     console.log(Dose);
-    if (document.getElementById("Dose").value === undefined || document.getElementById("Dose").value === ""  ) { Dose = 20;}
+    if (document.getElementById("Dose").value === ""  ) { Dose = 20;}
     
     document.getElementById("output3").innerHTML = contentpermL * Dose;
 }
