@@ -75,8 +75,6 @@ function handle3() {
     var Dose = document.getElementById("Dose").value;
 
     if (document.getElementById("Dose").value === ""  ) { Dose = 20;}
-    console.log("<",contentpermL,">");
-    console.log("<",Dose,">");
     var output = contentpermL * Dose;
     var output = output.toFixed(2);
     if (contentpermL === "" || Dose === "") {
