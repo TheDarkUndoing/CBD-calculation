@@ -1,6 +1,18 @@
- .jumbotron{
+ .jumbotron {
              margin-top: auto;
-             margin-bottom: 30px;
-             background-image: url("background.jpg");
+             margin-bottom: auto;
+             background-image: linear-gradient(-90deg,#189b48,#99a073);
              background-size: cover;
-             color: darkblue;
+             color:#ffe6e6;
+            // text-shadow: 5px 5px rgba(23, 23, 23, 0.37);
+
+}
+#Tform{
+		text-align: center;	
+}
+#text-background{
+					background-color: brown;
+}
+.container-fluid{
+					background-color: #ffe6e6
+}
