@@ -42,7 +42,7 @@
 
 }
 .parallax {
-                  background-image: url("/img/p.gif");
+                  background-image: url("/img/waterdrop.mp4");
                   min-height: 400px;
 
                   //background-color: red;
@@ -54,3 +54,14 @@
                   -o-background-size: cover;
                   background-size: cover;
       }
+.vp{
+      position:relative; ;
+      
+      //min-width: 100vw;
+      //min-height: 100vh;
+      //max-width: 1000px;
+      //max-height: 100%;
+      width: 5000px;
+      visibility: visible;
+      z-index: -1
+}
