@@ -21,14 +21,15 @@
  </head>
 
 <body>
-
-<div class="jumbotron text-center">
+	
+<div class="jumbotron text-center" >
+	
 	<div id="title-background">
   		<h1>CBD Dose Calculator</h1>
   		<p>Calculate your CBD Dosage</p> 
   	</div>
-</div>
-
+ </div>
+<div class="parallax"></div>
 <div class="container-fluid">
 
 <form  method="post">
@@ -38,7 +39,7 @@
    <br> 
     <br> 
      <br> 
-	<div >      
+	<div>      
 		<label>Size of Container</label>
 			<input id="Size" type="number" name="Measurement" min="1" placeholder="Size of Container"  oninput="handle();" onchange="handle();">
 			<input type="radio" value="mL" name="cSize1"  onclick="analyzeRadio(this.value); handle();">mL

@@ -1,9 +1,11 @@
  .jumbotron {
-             //margin-top: auto;
-             //margin-bottom: auto;
-             background-image: linear-gradient(-90deg,#189b48,#99a073);
+             margin-top: auto;
+             margin-bottom: auto;
+             background-image: url(/img/background.jpg);
              background-size: cover;
              color:#ffe6e6;
+             position: sticky;
+             top: 0;
             // text-shadow: 5px 5px rgba(23, 23, 23, 0.37);
 
 }
@@ -13,9 +15,39 @@
 #results{
 			text-align: :center;
 }
-#text-background{
-					background-color: brown;
+#title-background{
+					background-color: beige;
+                              background-position: center ;
+                              border: 2px solid black;
+                              background-repeat: no-repeat;
+                              color: green;
+                              width: 400px;
+                              height: auto;
+                              right: 10%;
+                              
+                              display: inline-block;
+                              margin: 100 auto;
+                              
+
+
+                              
 }
 .container-fluid{
-					background-color: #ffe6e6
+					background-color: #ffe6e6;
+                              margin-top: 100px;
+                              height: 1000px;
+                              width: 500px;
+
 }
+.parallax {
+                  background-image: url("https://media.giphy.com/media/3oEduVk9PIqrJHZYBO/giphy-downsized-large.gif");
+                  min-height: 500px;
+                  background-color: red;
+                  background-attachment: fixed;
+                  //background-position: center;
+                  background-repeat: no-repeat;
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+      }
