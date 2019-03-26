@@ -7,6 +7,8 @@
              position: sticky;
              top: 0;
             // text-shadow: 5px 5px rgba(23, 23, 23, 0.37);
+            //height: 100vh;
+            //width: 100vh;
 
 }
 #Tform{
@@ -35,8 +37,8 @@
 .container-fluid{
 					background-color: #ffe6e6;
                               margin-top: 100px;
-                              height: 100vh;
-                              width: 100vh;
+                              //height: 100vh;
+                              //width: 100vh;
 
 }
 .parallax {
@@ -44,7 +46,7 @@
                   min-height: 500px;
                   background-color: red;
                   background-attachment: fixed;
-                  //background-position: center;
+                  background-position: center;
                   background-repeat: no-repeat;
                   -webkit-background-size: cover;
                   -moz-background-size: cover;
