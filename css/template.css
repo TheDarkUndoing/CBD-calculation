@@ -23,11 +23,11 @@
                               border: 2px solid black;
                               background-repeat: no-repeat;
                               color: green;
-                              width: 400px;
+                              width: 100%;
                               height: auto;
                               right: 10%;
                               
-                              display: inline-block;
+                              //display: inline-block;
                               margin: 100 auto;
                               
 
@@ -42,11 +42,12 @@
 
 }
 .parallax {
-                  background-image: url("https://media.giphy.com/media/3oEduVk9PIqrJHZYBO/giphy-downsized-large.gif");
-                  min-height: 500px;
-                  background-color: red;
+                  background-image: url("/img/p.gif");
+                  min-height: 400px;
+
+                  //background-color: red;
                   background-attachment: fixed;
-                  background-position: center;
+                  //background-position: center;
                   background-repeat: no-repeat;
                   -webkit-background-size: cover;
                   -moz-background-size: cover;
