@@ -59,3 +59,8 @@
       width:100%;
       z-index: -1;
 }
+footer{
+            background-color: #ffe6e6;
+            font-weight: bold;
+            text-align: center;
+}
